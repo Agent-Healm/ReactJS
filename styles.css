@@ -1,0 +1,66 @@
+:root {
+    --dark-blue: #000048;
+    --dark-blue2: #00007f;
+    --greeny: #adff2f;
+    --fs: 100%;
+    --bg: #00002b;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--greeny);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* background-color: var(--dark-blue); */
+    padding: 10px;
+  }
+.grid-item {
+    /* border: 1px solid var(--dark-blue2); */
+    border: 1px solid var(--greeny);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--greeny);
+}
+
+.grid-add {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: var(--dark-blue2);
+}
+
+.grid-head {
+    font-size: 35px;
+    background-color: var(--dark-blue);
+}
+
+.grid-head:hover, .grid-content:hover , .grid-add:hover{
+    background-color: var(--greeny);
+    color: black;
+    transition-duration: 0.27s;
+}
+
+.grid-head:active, .grid-content:active , .grid-add:active{
+    background-color: yellow;
+    color: black;
+    transition-duration: 0s;
+}
+
+#dark-blue {
+    background-color: var(--dark-blue);
+}
+
+/* .grid-content:hover {
+    background-color: var(--greeny);
+    color: black;
+    transition-duration: 0.4s;
+} */
+
+/* .grid-content:active{
+    background-color: yellow;
+    color:black;
+    transition-duration: 0s;
+} */
