@@ -6,4 +6,4 @@
    styles.css
    ```
    
-3. Run ```npm start``` in terminal to view ***react project *** in web browser.
+3. Run ```npm start``` in terminal to view ***react project*** in web browser.
