@@ -31,6 +31,7 @@ import {useState} from 'react';
 
 function Page() {
   let rowKey = 0;
+  let lastKey = 0;
   const [listTd, setListTd] = useState([[]]);
   let setList;
   const [reversed, setReversed] = useState(true);
@@ -136,6 +137,7 @@ function Page() {
   function Record(){
     const rows = listTd.map((rowItem) => {
         rowKey = rowItem[0];
+        lastKey = Math.max(rowKey, lastKey);
         return (
               <Row rowItems={rowItem} key = {rowKey.toString()}/>
         );
@@ -146,7 +148,7 @@ function Page() {
   function Info({onAdd, onSort}){
     return (
       <>
-        <div className='grid-item grid-add' onClick={() => onAdd(rowKey)}>+</div>
+        <div className='grid-item grid-add' onClick={() => onAdd(lastKey)}>+</div>
         <div className='grid-item grid-head' onClick={() => onSort(0) }>Id</div>
         <div className='grid-item grid-head' >Deskripsi</div>
         <div className='grid-item grid-head' onClick={() => onSort(2) }>Prioritas</div>
