@@ -1,4 +1,4 @@
-1. Run  ```create-react-app reactToDo``` to create your ***react*** project in a folder.
+1. Run  ```create-react-app reactToDo``` in terminal to create your ***react*** project in a folder.
 2. When finished, copy the following files from **this repository** into the ***src folder in the current project***.
    ```
    App.js
